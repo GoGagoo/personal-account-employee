@@ -1,51 +1,36 @@
-import React from 'react'
+'use client'
 
-const StatisticsBlockChart = () => {
+import DonutChart from './DonutChart'
+
+const StatisticsBlockChart = ({ hoveredItem }) => {
+	const data = {
+		datasets: [
+			{
+				data: [85, 20, 45],
+				backgroundColor: ['#25824f', '#DB4546', '#FFB649'],
+				hoverBackgroundColor: ['#3BC177', '#E40002', '#FFFC00'],
+				hoverOffset: 5,
+			},
+		],
+	}
+
+	const options = {
+		responsive: true,
+		maintainAspectRatio: false,
+		cutout: '85%',
+		'borderColor': 'transparent',
+		hover: {
+			mode: 'nearest',
+			intersect: true,
+		},
+	}
+
 	return (
-		<div className='relative w-32 h-32'>
-			<svg viewBox='0 0 36 36' className='circular-chart'>
-				<path
-					className='circle-bg'
-					d='M18 2.0845
-        a 15.9155 15.9155 0 0 1 0 31.831
-        a 15.9155 15.9155 0 0 1 0 -31.831'
-					fill='none'
-					stroke='#eee'
-					strokeWidth='2'
-				/>
-				<path
-					className='circle'
-					strokeDasharray='70, 30'
-					d='M18 2.0845
-        a 15.9155 15.9155 0 0 1 0 31.831
-        a 15.9155 15.9155 0 0 1 0 -31.831'
-					fill='none'
-					stroke='#4caf50'
-					strokeWidth='2'
-				/>
-				<path
-					className='circle'
-					strokeDasharray='20, 80'
-					d='M18 2.0845
-        a 15.9155 15.9155 0 0 1 0 31.831
-        a 15.9155 15.9155 0 0 1 0 -31.831'
-					fill='none'
-					stroke='#ff9800'
-					strokeWidth='2'
-				/>
-				<path
-					className='circle'
-					strokeDasharray='10, 90'
-					d='M18 2.0845
-        a 15.9155 15.9155 0 0 1 0 31.831
-        a 15.9155 15.9155 0 0 1 0 -31.831'
-					fill='none'
-					stroke='#f44336'
-					strokeWidth='2'
-				/>
-			</svg>
-			<div className='absolute inset-0 flex items-center justify-center'>
+		<div className='relative size-40'>
+			<DonutChart data={data} options={options} />
+			<div className='absolute inset-0 py-12 flex flex-col items-center justify-center pointer-events-none'>
 				<span className='text-4xl text-white'>32</span>
+				<span className='text-[14px] text-zinc-500'>дня</span>
 			</div>
 		</div>
 	)

@@ -11,7 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='ru'>
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+			{children}
+			<script src="path/to/chartjs/dist/chart.umd.js"></script>
+			</body>
 		</html>
 	)
 }

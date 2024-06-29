@@ -7,10 +7,19 @@ const StatisticsBlock = () => {
 			<div className='bg-zinc-800 p-7 rounded-xl'>
 				<div className='flex items-center gap-2'>
 					<div className='text-2xl mb-4'>Статистика</div>
-					<Icons.Info />
+					<button data-tooltip='tooltip-right' data-tooltip-placement='right'>
+						<Icons.Info />
+					</button>
+					<div
+						data-tooltip='tooltip-right'
+						data-tooltip-placement='right'
+						className='relative z-50 whitespace-normal break-words rounded-md bg-[#303030] py-1.5 px-2 font-sans text-sm font-normal text-white focus:outline-none mb-3'
+					>
+						1 раб. месяц = 3 дня отпуска
+					</div>
 				</div>
-				<div className='flex items-center justify-center text-4xl'>
-						<StatisticsBlockChart />
+				<div className='flex items-center justify-center text-[34px]'>
+					<StatisticsBlockChart />
 				</div>
 				<ul className='space-y-2 mt-4'>
 					<li className='flex justify-between border rounded-xl transition border-zinc-700 hover:border-zinc-200 leading-10'>
