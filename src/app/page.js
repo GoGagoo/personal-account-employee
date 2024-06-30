@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 
 export default function Home() {
 	return (
-		<main className='mx-52 mt-12 mb-14'>
+		<main className='mx-[213px] mt-6 mb-24'>
 			<Navbar />
 			<ExitButton />
 			<Header />

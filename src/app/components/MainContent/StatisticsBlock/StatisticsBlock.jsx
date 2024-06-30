@@ -1,22 +1,30 @@
+'use client'
+
+import { useState } from 'react'
 import { Icons } from '../../../icons/icons'
 import StatisticsBlockChart from './StatisticsBlockChart'
 
 const StatisticsBlock = () => {
+	const [showTooltip, setShowTooltip] = useState(false)
+
 	return (
-		<div className='w-full md:w-[516px] h-full md:h-[444px] mt-[16px]'>
+		<div className='max-w-[516px] md:max-w-[516px] lg:min-w-[516px] h-full md:h-[444px] mt-[16px]'>
 			<div className='bg-zinc-800 p-7 rounded-xl'>
 				<div className='flex items-center gap-2'>
 					<div className='text-2xl mb-4'>Статистика</div>
-					<button data-tooltip='tooltip-right' data-tooltip-placement='right'>
+					<button
+						onMouseEnter={() => setShowTooltip(true)}
+						onMouseLeave={() => setShowTooltip(false)}
+					>
 						<Icons.Info />
 					</button>
-					<div
-						data-tooltip='tooltip-right'
-						data-tooltip-placement='right'
-						className='relative z-50 whitespace-normal break-words rounded-md bg-[#303030] py-1.5 px-2 font-sans text-sm font-normal text-white focus:outline-none mb-3'
-					>
-						1 раб. месяц = 3 дня отпуска
-					</div>
+					{showTooltip && (
+						<div
+							className='transition align-middle z-50 font-poppins text-[14px] text-nowrap  mb-3 py-1 px-[8px] bg-zinc-700 text-white rounded shadow-2xl'
+						>
+							1 раб. месяц = 3 дня отпуска
+						</div>
+					)}
 				</div>
 				<div className='flex items-center justify-center text-[34px]'>
 					<StatisticsBlockChart />

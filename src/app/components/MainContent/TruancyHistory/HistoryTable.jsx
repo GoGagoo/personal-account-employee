@@ -2,55 +2,55 @@ import { Icons } from '../../../icons/icons'
 
 const HistoryTable = () => {
 	return (
-		<div className='mt-10 space-y-3'>
-			<ul className='flex justify-between items-center py-5 font-poppins text-zinc-400 border-b-[1px] border-b-zinc-600'>
+		<div className='mt-10 space-y-1'>
+			<ul className='grid grid-cols-3 font-poppins text-zinc-400 border-b-[1px] border-b-zinc-600 py-5 items-center'>
 				<li>Тип</li>
 				<li>Даты</li>
-				<li>Количество дней</li>
+				<li className='text-right'>Количество дней</li>
 			</ul>
-			<ul className='flex justify-between transition hover:rounded-md hover:bg-zinc-700 items-center  py-3 font-poppins text-zinc-200 border-b-[1px] border-b-zinc-600'>
+			<ul className='grid grid-cols-3 transition hover:rounded-lg hover:bg-zinc-700 items-center py-3.5 font-poppins text-zinc-200 border-b-[1px] border-b-zinc-600'>
 				<li>Отпуск</li>
-				<li className='ml-20 flex items-center'>
-					03 марта 2023{' '}
+				<li className='flex items-center'>
+					03 марта 2023
 					<span className='text-yellow-500 px-[11px]'>
 						<Icons.ArrowRight />
-					</span>{' '}
+					</span>
 					23 марта 2023
 				</li>
-				<li>20</li>
+				<li className='text-right'>20</li>
 			</ul>
-			<ul className='flex justify-between items-center transition hover:rounded-md hover:bg-zinc-700 py-3 font-poppins text-zinc-200 border-b-[1px] border-b-zinc-600'>
+			<ul className='grid grid-cols-3 transition hover:rounded-lg hover:bg-zinc-700 items-center py-3.5 font-poppins text-zinc-200 border-b-[1px] border-b-zinc-600'>
 				<li>Отгул</li>
-				<li className='ml-20 flex items-center'>
-					03 марта 2023{' '}
+				<li className='flex items-center'>
+					03 марта 2023
 					<span className='text-red-500 px-[11px]'>
 						<Icons.ArrowRight />
-					</span>{' '}
+					</span>
 					23 марта 2023
 				</li>
-				<li>20</li>
+				<li className='text-right'>4</li>
 			</ul>
-			<ul className='flex justify-between items-center transition hover:rounded-md hover:bg-zinc-700 py-3 font-poppins text-zinc-200 border-b-[1px] border-b-zinc-600'>
+			<ul className='grid grid-cols-3 transition hover:rounded-lg hover:bg-zinc-700 items-center py-3.5 font-poppins text-zinc-200 border-b-[1px] border-b-zinc-600'>
 				<li>Отгул</li>
-				<li className='ml-20 flex items-center'>
-					03 марта 2023{' '}
+				<li className='flex items-center'>
+					03 марта 2023
 					<span className='text-red-500 px-[11px]'>
 						<Icons.ArrowRight />
-					</span>{' '}
+					</span>
 					23 марта 2023
 				</li>
-				<li>20</li>
+				<li className='text-right'>4</li>
 			</ul>
-			<ul className='flex justify-between items-center transition hover:rounded-md hover:bg-zinc-700 py-3 font-poppins text-zinc-200'>
+			<ul className='grid grid-cols-3 transition hover:rounded-lg hover:bg-zinc-700 items-center py-3.5 font-poppins text-zinc-200'>
 				<li>Отгул</li>
-				<li className='ml-20 flex items-center'>
-					03 марта 2023{' '}
+				<li className='flex items-center'>
+					03 марта 2023
 					<span className='text-red-500 px-[11px]'>
 						<Icons.ArrowRight />
-					</span>{' '}
+					</span>
 					23 марта 2023
 				</li>
-				<li>20</li>
+				<li className='text-right'>4</li>
 			</ul>
 		</div>
 	)
