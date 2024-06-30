@@ -12,7 +12,11 @@ body {
 		text-wrap: balance;
 	}
 }
+
 @font-face {
-	font-family: 'Poppins';
-	src: url('/public/fonts/Poppins-Regular.ttf');
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+	font-display: swap;
 }

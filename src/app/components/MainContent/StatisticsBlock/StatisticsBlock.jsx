@@ -19,9 +19,7 @@ const StatisticsBlock = () => {
 						<Icons.Info />
 					</button>
 					{showTooltip && (
-						<div
-							className='transition align-middle z-50 font-poppins text-[14px] text-nowrap  mb-3 py-1 px-[8px] bg-zinc-700 text-white rounded shadow-2xl'
-						>
+						<div className='transition ease-in align-middle text-[14px] text-nowrap mb-3 py-1 px-[8px] bg-zinc-700 text-white rounded shadow-2xl'>
 							1 раб. месяц = 3 дня отпуска
 						</div>
 					)}
