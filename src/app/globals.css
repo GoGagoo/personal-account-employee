@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 body {
-  background-color: #141414;
-  color: #E1E3E6;
+	background-color: #141414;
+	color: #e1e3e6;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('/public/fonts/Poppins-Regular.ttf');
 }
