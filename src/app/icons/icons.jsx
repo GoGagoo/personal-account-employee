@@ -35,15 +35,15 @@ export const Icons = {
 		)
 	},
 	Chevron: () => {
-		return (
-			<svg
-				width='8'
-				height='14'
-				viewBox='0 0 8 14'
-				fill='currentColor'
-				xmlns='http://www.w3.org/2000/svg'
-				className='text-zinc-500 group-hover:text-zinc-100'
-			>
+    return (
+      <svg
+        width='24'
+        height='24'
+        viewBox='0 0 8 14'
+        fill='currentColor'
+        xmlns='http://www.w3.org/2000/svg'
+        className='text-zinc-500 group-hover:text-zinc-100'
+      >
 				<path
 					fillRule='evenodd'
 					clipRule='evenodd'
