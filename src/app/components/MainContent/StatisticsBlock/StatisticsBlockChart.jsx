@@ -2,7 +2,7 @@
 
 import DonutChart from './DonutChart'
 
-const StatisticsBlockChart = ({ hoveredItem }) => {
+const StatisticsBlockChart = () => {
 	const data = {
 		datasets: [
 			{

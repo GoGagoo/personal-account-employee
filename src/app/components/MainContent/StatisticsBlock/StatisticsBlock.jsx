@@ -8,8 +8,8 @@ const StatisticsBlock = () => {
 	const [showTooltip, setShowTooltip] = useState(false)
 
 	return (
-		<div className='max-w-[516px] md:max-w-[516px] lg:min-w-[516px] h-full md:h-[444px] mt-[16px]'>
-			<div className='bg-zinc-800 p-7 rounded-xl'>
+		<div className='w-auto sm:w-auto md:w-auto lg:min-w-[516px] h-full md:h-[444px] mt-[16px]'>
+			<div className='bg-zinc-800 p-4 sm:p-7 rounded-xl'>
 				<div className='flex items-center gap-2'>
 					<div className='text-2xl mb-4'>Статистика</div>
 					<button
