@@ -15,6 +15,7 @@ const StatisticsBlock = () => {
 					<button
 						onMouseEnter={() => setShowTooltip(true)}
 						onMouseLeave={() => setShowTooltip(false)}
+						className='outline-none'
 					>
 						<Icons.Info />
 					</button>

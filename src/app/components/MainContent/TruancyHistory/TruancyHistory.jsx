@@ -1,4 +1,5 @@
 import HistoryTable from './HistoryTable'
+import ShowModalHistoryTable from './ModalWindow/ShowModalHistoryTable'
 
 const TruancyHistory = () => {
 	return (
@@ -6,9 +7,7 @@ const TruancyHistory = () => {
 			<div className='bg-zinc-800 p-7 rounded-xl'>
 				<div className='flex justify-between items-center'>
 					<div className='text-2xl'>История отпусков</div>
-					<div className='text-[14px] text-zinc-500 hover:text-zinc-200 transition cursor-pointer'>
-						Посмотреть все
-					</div>
+					<ShowModalHistoryTable />
 				</div>
 
 				<HistoryTable />
