@@ -5,11 +5,15 @@ import Navbar from './components/Navbar'
 
 export default function Home() {
 	return (
-		<main className='mx-4 md:mx-16 lg:mx-[213px] mt-6 mb-24'>
-			<Navbar />
-			<ExitButton />
-			<Header />
-			<MainContent />
+		<main className='mt-6 mb-6 md:mb-20'>
+			<div className='mx-4 md:mx-16 lg:mx-[213px]'>
+				<Navbar />
+				<ExitButton />
+			</div>
+			<div className='mx-full md:mx-16 lg:mx-[213px]'>
+				<Header />
+				<MainContent />
+			</div>
 		</main>
 	)
 }

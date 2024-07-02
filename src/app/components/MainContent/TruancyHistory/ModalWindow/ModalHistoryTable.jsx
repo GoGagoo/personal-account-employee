@@ -27,7 +27,7 @@ const ModalHistoryTable = ({ handleCloseModal }) => {
 			<div className='mt-5'>
 				<ul className='grid grid-cols-3 text-zinc-400 border-b-[1px] border-b-zinc-600 py-3 items-center'>
 					<li>Тип</li>
-					<li>Даты</li>
+					<li>Даты отпуска</li>
 					<li className='text-right'>Количество дней</li>
 				</ul>
 				<ul className='grid grid-cols-3 transition hover:rounded-lg hover:bg-zinc-700 items-center py-3.5 text-zinc-200 border-b-[1px] border-b-zinc-600'>
