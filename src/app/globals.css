@@ -5,6 +5,9 @@
 body {
 	background-color: #141414;
 	color: #e1e3e6;
+	--sb-track-color: #333232;
+	--sb-thumb-color: #4f4f55;
+	--sb-size: 7px;
 }
 
 @layer utilities {
@@ -13,10 +16,22 @@ body {
 	}
 }
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-	font-display: swap;
+body::-webkit-scrollbar {
+	width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--sb-track-color);
+	border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--sb-thumb-color);
+	border-radius: 20px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+	body {
+		scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+	}
 }
